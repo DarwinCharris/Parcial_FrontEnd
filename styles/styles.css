@@ -57,17 +57,31 @@ body {
     color: var(--primary-text-color);
 }
 .header-logo li h3{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header-logo #logo-mobile{
+    display: none;
+}
+
+.header-logo img {
+    display: block;
+}
+
+.header-logo ul{
+    gap: 10px;
 }
 
 .header-menu li a{
     color: var(--primary-text-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
+    opacity: 0.5;
 }
 .header-menu #this-page{
     font-weight: 600;
+    opacity: 1;
 }
 
 .header-buttons li{
@@ -82,6 +96,7 @@ body {
     border-radius: 8px;
     cursor: pointer;
     font-weight: 600;
+    font-size: 14px;
     width: 101px;
     height: 40px;
 }
@@ -89,9 +104,12 @@ body {
 .header-buttons li a{
     color: var(--primary-text-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     padding-right: 10px;
 }
+
+
+
 
 /*Footer*/
 
@@ -116,7 +134,8 @@ body {
 .footer-company a, .footer-categories a{
     color: var(--primary-text-color);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
+    opacity: 0.8;
 }
 
 .footer-job ul{
@@ -132,6 +151,8 @@ body {
 }
 .footer-job p{
     font-size: 16px;
+    font-weight: 400;
+    opacity: 0.8;
 }
 .footer-job h3{
     font-size: 20px;
@@ -180,6 +201,7 @@ body {
 .footer-newsletter p{
     font-size: 14px;
     margin: 0;
+    opacity: 0.8;
 }
 .footer-newsletter form{
     display: flex;
@@ -255,3 +277,42 @@ body {
     grid-area: homepage-news-blog;
 }
 
+/* ----------------------Mobile------------------------------------- */
+
+@media (max-width: 760px){
+    /* header */
+    .header{
+        justify-content: space-between;
+    }
+    .header-logo #logo-desktop{
+        display: none;
+    }
+    .header-menu{
+        display: none;
+    }
+    .header-logo #logo-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    /* footer */
+    .footer{
+        padding: 50px 30px 30px 30px;
+    }
+    .footer .footer-up{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-job ul{
+        justify-content: center;
+    }
+    .footer .footer-down{
+        flex-direction: column;
+    }
+    .footer-newsletter{
+        max-width: none;
+    }
+    .footer-company, .footer-categories, .footer-newsletter{
+        padding-top: 20px;
+    }
+}
