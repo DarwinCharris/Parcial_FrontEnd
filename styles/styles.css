@@ -763,7 +763,7 @@ body {
 
 /*------------- Contact Page ------------*/
 
-.contact-header {
+.pages-header-large-title {
   padding-top: 60px;
   padding-bottom: 100px;
   font-weight: 700;
@@ -791,10 +791,10 @@ body {
 .contact-main-section-info-title {
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .contact-main-section-info-title-description {
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 40px;
 }
 
@@ -808,17 +808,17 @@ body {
 }
 
 .contact-main-section-info-unorderlist li {
-  width: 300px;
-  height: 155px;
+  width: 240px;
+  height: 135px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .contact-main-section-info-unorderlist li img {
-  height: 28px;
-  width: 28px;
+  height: 22px;
+  width: 22px;
 }
 .contact-main-section-info-unorderlist-list-title {
   font-size: 20px;
@@ -826,7 +826,7 @@ body {
 }
 
 .contact-main-section-info-unorderlist-list-p {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .contact-main-section-form {
@@ -836,20 +836,20 @@ body {
   flex-flow: column;
   justify-content: space-around;
   border-radius: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
-  gap: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 15px;
 }
 
 .contact-main-section-form-information {
   display: flex;
   flex-flow: column wrap;
-  margin-top: 8%;
+  margin-top: 10%;
   align-items: center;
 }
 
 .contact-main-section-form-information-title {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 600;
 }
 
@@ -865,31 +865,28 @@ body {
 }
 
 .contact-main-section-form-group {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   display: flex;
   flex-flow: column;
 }
 .contact-main-section-form-group input {
-  font-size: 16px;
   border: none;
-  border-radius: 10px;
-  padding: 14px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .contact-main-section-form-group textarea {
-  font-size: 16px;
   height: 100px;
   border: none;
   border-radius: 5px;
-  padding: 14px;
+  padding: 10px;
 }
 
 .contact-main-section-form button {
-  font-size: 18px;
-  width: 40%;
+  width: 50%;
   height: 40px;
-  background-color: var(--primary-color);
+  background-color: #309689;
   color: white;
   border: none;
   border-radius: 8px;
@@ -909,8 +906,7 @@ body {
   margin: 0;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 60px;
 }
 
 .contact-map {
