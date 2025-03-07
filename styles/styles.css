@@ -773,7 +773,7 @@ body {
   color: var(--primary-text-color);
 }
 
-.contact-main {
+.pages-main-container {
   margin: 52px 72px;
 }
 
@@ -911,6 +911,37 @@ body {
 
 .contact-map {
   border-radius: 20px;
+}
+
+/* About us Page */
+.about-first-section-container {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 40px;
+  align-items: flex-start;
+  padding: 20px;
+  flex-flow: row wrap;
+}
+
+.about-first-section-title,
+.about-first-section-paragraph {
+  flex: 1;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.about-first-section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.about-first-section-paragraph {
+  font-size: 0.95rem;
+}
+
+.about-first-section-img {
+  width: 100%;
 }
 
 /* ----------------------Mobile------------------------------------- */
