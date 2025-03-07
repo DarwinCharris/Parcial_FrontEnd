@@ -301,7 +301,6 @@ body {
   border-radius: 16px;
   border: none;
   display: flex;
-  height: 60px;
   overflow: hidden;
 }
 .homepage-principal-search-form .firstpart-bar {
@@ -1072,6 +1071,7 @@ body {
   /* header */
   .header {
     justify-content: space-between;
+    padding: 0 20px;
   }
   .header-logo #logo-desktop {
     display: none;
@@ -1082,6 +1082,77 @@ body {
   .header-logo #logo-mobile {
     display: flex;
     align-items: center;
+  }
+  /*---------------------------Homepage principal-----------------------------------------*/
+  .homepage-Background {
+    height: 100vh;
+  }
+  .homepage-principal-search {
+    justify-content: center;
+    padding: 0 20px;
+    position: relative;
+  }
+  .homepage-principal-search h1 {
+    font-size: 32px;
+  }
+  .homepage-principal-search .subtitle {
+    opacity: 0.5;
+  }
+  .homepage-principal-search-form {
+    height: auto;
+    width: 100%;
+  }
+  .homepage-principal-search-form .bar {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 40px;
+    height: auto;
+  }
+  .firstpart-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .firstpart-bar input {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    text-align: start;
+    opacity: 0.8;
+  }
+  .firstpart-bar select {
+    border-left: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .homepage-principal-search-form .secondpart-bar {
+    height: initial;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .homepage-principal-search-form .secondpart-bar button {
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .homepage-principal-search-stats {
+    margin: 0 20px 40px 20px;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: auto;
+  }
+  .homepage-principal-search-stats ul {
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+  }
+  .homepage-principal .homepage-principal-companies {
+  }
+  .homepage-principal-companies ul {
+    flex-wrap: wrap;
   }
   /* Contact Page */
   .contact-main {
