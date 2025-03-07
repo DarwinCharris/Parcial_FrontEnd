@@ -1149,8 +1149,6 @@ body {
     gap: 100px;
     width: 100%;
   }
-  .homepage-principal .homepage-principal-companies {
-  }
   .homepage-principal-companies ul {
     flex-wrap: wrap;
   }
