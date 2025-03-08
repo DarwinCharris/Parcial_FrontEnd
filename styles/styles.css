@@ -1027,7 +1027,7 @@ body {
 }
 
 /* ----------------------Mobile------------------------------------- */
-@media (max-height: 768px) {
+@media (max-height: 600px) {
   .homepage-Background {
     height: 150dvh;
   }
