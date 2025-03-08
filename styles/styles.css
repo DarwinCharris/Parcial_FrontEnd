@@ -1139,19 +1139,14 @@ body {
   }
   .homepage-principal-companies {
     overflow-x: hidden;
-    padding-bottom: 0;
+    padding-right: 0;
   }
   .homepage-principal-companies ul {
-    display: unset;
-    white-space: nowrap;
+    overflow-x: auto;
   }
   .homepage-principal-companies ul li {
-    display: inline-block;
+    min-width: 150px;
   }
-  .homepage-principal-companies img {
-    display: block;
-  }
-
   /*------------------Recent Jobs---------------*/
   .homepage-recent-jobs-head {
     text-align: center;
@@ -1255,33 +1250,22 @@ body {
     width: 100%;
   }
   /*------------------Homepage Testimonials------------------*/
-  .mobile-testimonials {
-    display: none !important;
-  }
   .homepage-testimonials {
     overflow-x: hidden;
   }
   .testimonials-cards {
-    display: inline-block;
-    grid-template-columns: unset;
-    max-width: 100%;
-    padding: 0;
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
   }
   .testimonials-cards li {
-    max-width: 350px;
-    display: inline-block;
-    padding: 40px;
-  }
-  .testimonial-user {
-    padding: 20px 0 0 0;
-  }
-  .testimonial-info p {
-    white-space: unset;
     min-width: 350px;
+    padding: 20px;
   }
   /*---------Homepage news an blog-------------*/
   .homepage-news-blog {
     overflow-x: hidden;
+    padding-right: 0;
   }
   .news-blog-content {
     overflow-x: hidden;
@@ -1290,18 +1274,11 @@ body {
     display: none;
   }
   .homepage-news-blog ul {
-    list-style: none;
-    display: inline-block;
-    grid-template-columns: unset;
-    width: max-content;
-    padding: 0;
-    margin: 0;
+    display: flex;
+    overflow-x: auto;
   }
   .homepage-news-blog li {
-    display: inline-block;
-    padding-right: 5px;
-    vertical-align: top;
-    width: 350px;
+    min-width: 400px;
   }
   .news-blog-card p {
     font-size: 16px;
