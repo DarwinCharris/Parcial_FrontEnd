@@ -1027,7 +1027,19 @@ body {
 }
 
 /* ----------------------Mobile------------------------------------- */
-
+@media (max-height: 768px) {
+  .homepage-Background {
+    height: 150dvh;
+  }
+  .homepage-principal {
+    display: flex;
+    justify-content: space-between;
+  }
+  .homepage-principal-search {
+    height: 100%;
+    width: 100%;
+  }
+}
 @media (max-width: 768px) {
   /* header */
   .header {
@@ -1044,6 +1056,7 @@ body {
     display: flex;
     align-items: center;
   }
+
   /*---------------------------Homepage principal-----------------------------------------*/
   .homepage-principal {
     padding-bottom: 40px;
