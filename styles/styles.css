@@ -1080,7 +1080,7 @@ body {
   .homepage-principal-search-form .bar {
     flex-direction: column;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 20px;
     height: auto;
   }
   .firstpart-bar {
