@@ -23,16 +23,69 @@ body {
   background-image: url("../images/background.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100dvh;
   display: grid;
   grid-area: homepage-background;
-  grid-template-rows: 0.5fr 3fr 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 .Background {
   background-color: var(--primary-bg-color);
 }
 
+/*------------------------Common elements--------------------------*/
+.page-content {
+  padding: 50px 72px;
+}
+.basic-title {
+  font-size: 50px;
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  margin: 0;
+}
+.small-text {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+}
+.paragraph {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+}
+.basic-button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--primary-text-color);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+.view-all {
+  color: var(--primary-color);
+  font-size: 24px;
+}
+.secondary-title {
+  color: var(--secondary-text-color);
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .page-content {
+    padding: 30px 20px;
+  }
+  .basic-title {
+    font-size: 28px;
+  }
+  .secondary-title {
+    font-size: 28px;
+  }
+}
 /*----------Header-------------------------------*/
 
 .header {
@@ -94,18 +147,6 @@ body {
 .header-buttons li {
   align-items: center;
   display: flex;
-}
-.header-buttons li button {
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 8px;
-  color: var(--primary-text-color);
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
-  height: 40px;
-  padding: 10px 20px;
-  width: 101px;
 }
 
 .header-buttons li a {
@@ -278,6 +319,7 @@ body {
   height: calc(100vh - 190px);
   justify-content: center;
   padding: 20px 20px 0 20px;
+  text-align: center;
 }
 .homepage-principal-search h1 {
   font-size: 70px;
@@ -311,7 +353,7 @@ body {
   border: none;
   outline: none;
   padding: 5px;
-  position: relative;
+
   text-align: center;
 }
 .firstpart-bar select {
@@ -356,14 +398,13 @@ body {
   width: 100%;
 }
 .homepage-principal-search-stats ul {
+  align-items: center;
   display: flex;
+  gap: 5%;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 30%;
-  min-width: 500px;
-  justify-content: space-between;
-  align-items: center;
 }
 .homepage-principal-search-stats .circle {
   width: 60px;
@@ -399,7 +440,6 @@ body {
   background-color: var(--primary-bg-color);
   box-sizing: border-box;
   padding: 20px 10%;
-  width: 100%;
 }
 
 .homepage-principal-companies ul {
@@ -408,36 +448,24 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 /* ------------Recent Jobs----------------- */
 .homepage-recent-jobs {
   display: flex;
   flex-direction: column;
   grid-area: homepage-recent-jobs;
-  padding: 30px 72px;
 }
 .homepage-recent-jobs-head {
   position: relative;
-}
-.homepage-recent-jobs-head h1 {
-  font-size: 50px;
-  margin: 0;
-  color: var(--secondary-text-color);
-  font-weight: 600;
-  padding: 0 0 20px 0;
-}
-.homepage-recent-jobs-head p {
-  font-size: 16px;
-  color: var(--secondary-text-color);
-  padding: 0;
-  margin: 0;
 }
 .homepage-recent-jobs-head a {
   position: absolute;
   bottom: 0;
   right: 0;
-  color: var(--primary-color);
-  font-size: 24px;
+}
+#mobile-view-all {
+  display: none;
 }
 .cardlist {
   list-style: none;
@@ -448,7 +476,7 @@ body {
   gap: 24px;
 }
 .card-job {
-  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 2px 5px rgba(48, 150, 137, 0.1);
   border-radius: 20px;
   padding: 35px;
 }
@@ -495,7 +523,7 @@ body {
 .third-row ul {
   display: flex;
   list-style: none;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .third-row ul li {
   display: flex;
@@ -512,15 +540,6 @@ body {
   font-size: 14px;
   opacity: 0.5;
 }
-.third-row button {
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
-  border: none;
-  border-radius: 8px;
-  font-size: 14px;
-  padding: 0 15px;
-  height: 40px;
-}
 
 /* -----------------Homepage Categories----------------- */
 .homepage-categories {
@@ -535,18 +554,6 @@ body {
 .homepage-categories header {
   align-items: center;
   text-align: center;
-}
-.homepage-categories header h1 {
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-.homepage-categories header p {
-  font-size: 16px;
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
 }
 .homepage-categories ul {
   display: grid;
@@ -617,7 +624,6 @@ body {
   display: flex;
   grid-area: homepage-additional-content;
   flex-direction: column;
-  padding: 120px 72px;
 }
 .homepage-additional-content-principal {
   padding: 0 0 80px 0;
@@ -637,17 +643,7 @@ body {
   justify-items: center;
   padding: 86px 0 0;
 }
-.information h1 {
-  color: var(--secondary-text-color);
-  font-size: 35px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-.information p {
-  color: var(--secondary-text-color);
-  font-size: 14px;
-}
+
 .information ul {
   align-items: center;
   display: flex;
@@ -656,19 +652,13 @@ body {
   margin-top: 40px;
   padding: 0;
 }
-.information ul button {
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 8px;
-  color: var(--primary-text-color);
-  font-weight: 600;
-  padding: 10px;
-  margin-right: 15px;
-}
+
 .information ul a {
+  display: unset;
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 600;
+  margin-left: 15px;
 }
 .homepage-additional-content-stats ul {
   display: flex;
@@ -722,16 +712,10 @@ body {
 }
 .banner-info p {
   font-size: 12px;
+  margin: 0;
   padding: 20px 0;
 }
-.banner-info button {
-  background-color: var(--primary-color);
-  border: none;
-  border-radius: 8px;
-  color: var(--primary-text-color);
-  font-weight: 600;
-  padding: 10px 15px;
-}
+
 .banner-image img {
   border: none;
   padding: 0;
@@ -747,22 +731,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 52px 72px;
 }
 .homepage-testimonials header {
   padding: 0;
   margin: 0;
   text-align: center;
-}
-.homepage-testimonials header h1 {
-  color: var(--secondary-text-color);
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-}
-.homepage-testimonials header p {
-  font-size: 16px;
-  padding: 20px;
 }
 .testimonials-cards {
   display: grid;
@@ -835,21 +808,9 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 52px 72px;
 }
 .homepage-news-blog header {
   position: relative;
-}
-.homepage-news-blog header h1 {
-  font-size: 50px;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-}
-.homepage-news-blog header p {
-  font-size: 14px;
-  margin: 0;
-  padding: 20px 0 0 0;
 }
 .homepage-news-blog header a {
   bottom: 0;
@@ -1084,11 +1045,12 @@ body {
     align-items: center;
   }
   /*---------------------------Homepage principal-----------------------------------------*/
-  .homepage-Background {
-    height: 100vh;
+  .homepage-principal {
+    padding-bottom: 40px;
   }
   .homepage-principal-search {
     justify-content: center;
+    height: 100%;
     padding: 0 20px;
     position: relative;
   }
@@ -1138,19 +1100,207 @@ body {
     width: 100%;
   }
   .homepage-principal-search-stats {
-    margin: 0 20px 40px 20px;
+    margin: 0;
     padding: 0;
     position: absolute;
     bottom: 0;
-    width: auto;
   }
   .homepage-principal-search-stats ul {
     justify-content: space-between;
-    gap: 100px;
-    width: 100%;
+    gap: unset;
+  }
+  .homepage-principal-search-stats ul .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .homepage-principal-search-stats ul img {
+    width: 20px;
+    height: 20px;
+  }
+  .homepage-principal-search-stats .stats-info h3 {
+    font-size: 14px;
+  }
+  .homepage-principal-search-stats .stats-info p {
+    font-size: 12px;
+  }
+  .homepage-principal-companies {
+    overflow-x: hidden;
+    padding-bottom: 0;
   }
   .homepage-principal-companies ul {
-    flex-wrap: wrap;
+    display: unset;
+    white-space: nowrap;
+  }
+  .homepage-principal-companies ul li {
+    display: inline-block;
+  }
+  .homepage-principal-companies img {
+    display: block;
+  }
+
+  /*------------------Recent Jobs---------------*/
+  .homepage-recent-jobs-head {
+    text-align: center;
+  }
+  .homepage-recent-jobs-head a {
+    display: none;
+  }
+  .card-job {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card-job .second-row {
+    display: unset;
+  }
+  .second-row .companyinfo {
+    padding: 0;
+  }
+  .card-job .third-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .card-job .third-row ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #mobile-view-all {
+    display: unset;
+    text-align: center;
+  }
+  /*-----------Homepage-Categories-------------*/
+  .homepage-categories ul {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 20px;
+    padding: 0;
+  }
+  /*-------------Homepage additional content-----------*/
+  .homepage-additional-content-principal {
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 0 0 20px 0;
+  }
+  .homepage-additional-content-principal .information {
+    padding: 0;
+    text-align: center;
+  }
+  .information ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+  }
+  .information ul li {
+    width: 100%;
+  }
+  .information ul button {
+    width: 100%;
+  }
+  .information ul a {
+    display: none;
+  }
+  .homepage-additional-content-stats ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+  .homepage-additional-content-stats li h2 {
+    font-size: 60px;
+  }
+  .homepage-additional-content-stats h3 {
+    font-size: 24px;
+  }
+  .homepage-additional-content-stats p {
+    font-size: 16px;
+  }
+  .bannerBackground {
+    grid-template-columns: unset;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "banner-image" "banner-info";
+    padding: 20px 0;
+  }
+  .banner-image {
+    grid-area: banner-image;
+  }
+  .banner-info {
+    grid-area: banner-info;
+    padding: 20px;
+    text-align: center;
+  }
+  .banner-info h1 {
+    font-size: 28px;
+  }
+  .banner-info p {
+    font-size: 16px;
+  }
+  .banner-info button {
+    width: 100%;
+  }
+  /*------------------Homepage Testimonials------------------*/
+  .mobile-testimonials {
+    display: none !important;
+  }
+  .homepage-testimonials {
+    overflow-x: hidden;
+  }
+  .testimonials-cards {
+    display: inline-block;
+    grid-template-columns: unset;
+    max-width: 100%;
+    padding: 0;
+  }
+  .testimonials-cards li {
+    max-width: 350px;
+    display: inline-block;
+    padding: 40px;
+  }
+  .testimonial-user {
+    padding: 20px 0 0 0;
+  }
+  .testimonial-info p {
+    white-space: unset;
+    min-width: 350px;
+  }
+  /*---------Homepage news an blog-------------*/
+  .homepage-news-blog {
+    overflow-x: hidden;
+  }
+  .news-blog-content {
+    overflow-x: hidden;
+  }
+  .homepage-news-blog header a {
+    display: none;
+  }
+  .homepage-news-blog ul {
+    list-style: none;
+    display: inline-block;
+    grid-template-columns: unset;
+    width: max-content;
+    padding: 0;
+    margin: 0;
+  }
+  .homepage-news-blog li {
+    display: inline-block;
+    padding-right: 5px;
+    vertical-align: top;
+    width: 350px;
+  }
+  .news-blog-card p {
+    font-size: 16px;
+  }
+  .news-blog-card h3 {
+    font-size: 20px;
+  }
+  .news-blog-card a {
+    font-size: 16px;
+  }
+  .news-blog-card-image img {
+    min-height: 300px;
   }
   /* Contact Page */
   .contact-main {
@@ -1199,24 +1349,26 @@ body {
 
   /* footer */
   .footer {
-    padding: 50px 30px 30px 30px;
+    padding: 50px 20px 30px 20px;
   }
   .footer .footer-up {
-    flex-direction: column;
-    text-align: center;
+    grid-template-columns: unset;
+    grid-template-rows: 1fr;
   }
   .footer-job ul {
     justify-content: center;
   }
   .footer .footer-down {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  .footer-newsletter {
-    max-width: none;
+  .footer-down .footer-legal a {
+    font-size: 16px;
   }
   .footer-company,
+  .footer-job,
   .footer-categories,
   .footer-newsletter {
     padding-top: 20px;
+    text-align: center;
   }
 }
