@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Job Portal" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Wilson Estrada & Darwin Charris" />
+    <meta name="copyright" content="© 2025 Wilson Estrada & Darwin Charris " />
+    <meta name="keywords" content="job,employee,search" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Find Your Dream Job" />
+    <meta
+      name="twitter:description"
+      content="Explore top job opportunities and connect with employers easily."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.ibb.co/ZRqcsKvY/FindJob.jpg"
+    />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="JobFinder" />
+    <meta property="og:title" content="Find Your Next Job" />
+    <meta
+      property="og:description"
+      content="Search jobs, post resumes, and get hired faster."
+    />
+    <meta property="og:image" content="https://i.ibb.co/ZRqcsKvY/FindJob.jpg" />
+    <!-- Links -->
+    <link rel="icon" href="./images/job.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./images/job.png" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Jobs</title>
+  </head>
+  <body>
+    <main class="jobs-main">
+      <div class="Background">
+        <header class="header">
+          <div class="header-logo">
+            <ul id="logo-desktop">
+              <li>
+                <img
+                  src="./images/Group.svg"
+                  alt="logo"
+                  width="20"
+                  height="20"
+                />
+              </li>
+              <li><h3>JobPortal</h3></li>
+            </ul>
+            <ul id="logo-mobile">
+              <li>
+                <img
+                  src="./images/logoMobile.svg"
+                  alt="logo"
+                  width="20"
+                  height="20"
+                />
+              </li>
+              <li><h3>Jobs</h3></li>
+            </ul>
+          </div>
+          <article class="header-menu">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./job.html" id="this-page">Jobs</a></li>
+              <li><a href="./abutUs.html">About Us</a></li>
+              <li><a href="./contactUs.html">Contact Us</a></li>
+            </ul>
+          </article>
+          <article class="header-buttons">
+            <ul>
+              <li><a href="#">Login</a></li>
+              <li><button class="basic-button">Register</button></li>
+            </ul>
+          </article>
+        </header>
+        <h1 class="contact-header" id="job-title-desktop">Jobs</h1>
+        <h1 class="contact-header" id="job-title-mobile">Jobs Sidebar</h1>
+      </div>
+      <!-- find job -->
+      <section class="find-job page-content">
+        <section class="filters">
+          <button class="basic-button filter-button">
+            Filtres <img src="./images/filter.svg" alt="Filters image" />
+          </button>
+          <nav>
+            <article>
+              <h1 class="nav-title">Search by job Title</h1>
+              <div class="nav-search-bar">
+                <img src="./images/search.svg" alt="Magnifying glass" />
+                <input type="text" placeholder="" />
+              </div>
+            </article>
+            <article>
+              <h1 class="nav-title">Location</h1>
+              <div class="nav-search-bar">
+                <img src="./images/map-pin-nav.svg" alt="Magnifying glass" />
+                <select>
+                  <option>Choose city</option>
+                </select>
+              </div>
+            </article>
+            <article>
+              <h1 class="nav-title">Category</h1>
+              <ul class="nav-selection">
+                <li>
+                  <input type="checkbox" />Commerce
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Telecomunications
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Hotel & Tourism
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Education
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Financial Services
+                  <div class="selection-tag">10</div>
+                </li>
+              </ul>
+              <button class="basic-button category-button">Show More</button>
+            </article>
+            <article>
+              <h1 class="nav-title">Job Type</h1>
+              <ul class="nav-selection">
+                <li>
+                  <input type="checkbox" />Full time
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Part Time
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Freelance
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Seasonal
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Fixed-Price
+                  <div class="selection-tag">10</div>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h1 class="nav-title">Experience Level</h1>
+              <ul class="nav-selection">
+                <li>
+                  <input type="checkbox" />No-experience
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Fresher
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Intermediate
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Expert
+                  <div class="selection-tag">10</div>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h1 class="nav-title">Date Posted</h1>
+              <ul class="nav-selection">
+                <li>
+                  <input type="checkbox" />All
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Last Hour
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Last 24 Hours
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Las 7 Days
+                  <div class="selection-tag">10</div>
+                </li>
+                <li>
+                  <input type="checkbox" />Last 30 Days
+                  <div class="selection-tag">10</div>
+                </li>
+              </ul>
+            </article>
+            <article>
+              <h1 class="nav-title">Salary</h1>
+              <div class="slider">
+                <div class="progress"></div>
+                <div class="range-input">
+                  <input
+                    type="range"
+                    class="range-min"
+                    min="0"
+                    max="1000"
+                    value="0"
+                  />
+                  <input
+                    type="range"
+                    class="range-max"
+                    min="0"
+                    max="1000"
+                    value="700"
+                  />
+                </div>
+              </div>
+              <div class="salary">
+                <h2>Salary: $0 - $9999</h2>
+                <button class="basic-button">Apply</button>
+              </div>
+            </article>
+            <article>
+              <h1 class="nav-title">Tags</h1>
+              <ul class="tags-list">
+                <li>
+                  <div class="tagcover">
+                    <a href="#">engineering</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="tagcover">
+                    <a href="#">design</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="tagcover">
+                    <a href="#">ui/ux</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="tagcover">
+                    <a href="#">marketing</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="tagcover">
+                    <a href="#">management</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="tagcover">
+                    <a href="#">soft</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="tagcover">
+                    <a href="#">construction</a>
+                  </div>
+                </li>
+              </ul>
+            </article>
+          </nav>
+          <div class="hiring">
+            <div class="hiring-texts">
+              <h1>WE ARE HIRING</h1>
+              <p>Apply Today!</p>
+            </div>
+            <div class="image-cover">
+              <img src="./images/hiring.png" alt="Hiring Image" />
+            </div>
+          </div>
+        </section>
+        <section class="jobs-space">
+          <div class="results-and-sort">
+            <p class="secondary-text">Showing 6-6 of 10 results</p>
+            <select>
+              <option>Sort by latest</option>
+            </select>
+          </div>
+          <ul class="cardlist">
+            <li>
+              <article class="card-job">
+                <div class="first-row">
+                  <div class="cover">
+                    <p>10 min ago</p>
+                  </div>
+                  <a href="#"
+                    ><img src="./images/savemarket.svg" alt="Save Market"
+                  /></a>
+                </div>
+                <div class="second-row">
+                  <img src="./images/Cmp1.svg" alt="Company Logo" />
+                  <div class="companyinfo">
+                    <h3>Forward Security Director</h3>
+                    <p>Bauch, Schuppe and Schulist Co</p>
+                  </div>
+                </div>
+                <div class="third-row">
+                  <ul>
+                    <li>
+                      <img src="./images/briefcaseblue.svg" alt="briefcase" />
+                      <p>Hotel & Torusim</p>
+                    </li>
+                    <li>
+                      <img src="./images/clock.svg" alt="Clock" />
+                      <p>Full time</p>
+                    </li>
+                    <li>
+                      <img src="./images/wallet.svg" alt="Wallet" />
+                      <p>$40000-$42000</p>
+                    </li>
+                    <li>
+                      <img src="./images/map-pin.svg" alt="Location" />
+                      <p>New-York,USA</p>
+                    </li>
+                  </ul>
+                  <button class="basic-button">Job Details</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-job">
+                <div class="first-row">
+                  <div class="cover">
+                    <p>12 min ago</p>
+                  </div>
+                  <a href="#"
+                    ><img src="./images/savemarket.svg" alt="Save Market"
+                  /></a>
+                </div>
+                <div class="second-row">
+                  <img src="./images/cmp2.svg" alt="Company Logo" />
+                  <div class="companyinfo">
+                    <h3>Regional Creative Facilitator</h3>
+                    <p>Wisozk - Becker Co</p>
+                  </div>
+                </div>
+                <div class="third-row">
+                  <ul>
+                    <li>
+                      <img src="./images/briefcaseblue.svg" alt="briefcase" />
+                      <p>Media</p>
+                    </li>
+                    <li>
+                      <img src="./images/clock.svg" alt="Clock" />
+                      <p>Part time</p>
+                    </li>
+                    <li>
+                      <img src="./images/wallet.svg" alt="Wallet" />
+                      <p>$28000-$32000</p>
+                    </li>
+                    <li>
+                      <img src="./images/map-pin.svg" alt="Location" />
+                      <p>Los- Angeles,USA</p>
+                    </li>
+                  </ul>
+                  <button class="basic-button">Job Details</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-job">
+                <div class="first-row">
+                  <div class="cover">
+                    <p>15 min ago</p>
+                  </div>
+                  <a href="#"
+                    ><img src="./images/savemarket.svg" alt="Save Market"
+                  /></a>
+                </div>
+                <div class="second-row">
+                  <img src="./images/cmp3.svg" alt="Company Logo" />
+                  <div class="companyinfo">
+                    <h3>Internal Integration Planner</h3>
+                    <p>Mraz, Quigley and Feest Inc.</p>
+                  </div>
+                </div>
+                <div class="third-row">
+                  <ul>
+                    <li>
+                      <img src="./images/briefcaseblue.svg" alt="briefcase" />
+                      <p>Construction</p>
+                    </li>
+                    <li>
+                      <img src="./images/clock.svg" alt="Clock" />
+                      <p>Full time</p>
+                    </li>
+                    <li>
+                      <img src="./images/wallet.svg" alt="Wallet" />
+                      <p>$48000-$50000</p>
+                    </li>
+                    <li>
+                      <img src="./images/map-pin.svg" alt="Location" />
+                      <p>Texas,USA</p>
+                    </li>
+                  </ul>
+                  <button class="basic-button">Job Details</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-job">
+                <div class="first-row">
+                  <div class="cover">
+                    <p>24 min ago</p>
+                  </div>
+                  <a href="#"
+                    ><img src="./images/savemarket.svg" alt="Save Market"
+                  /></a>
+                </div>
+                <div class="second-row">
+                  <img src="./images/cmp4.svg" alt="Company Logo" />
+                  <div class="companyinfo">
+                    <h3>District Intranet Director</h3>
+                    <p>VonRueden - Weber Co</p>
+                  </div>
+                </div>
+                <div class="third-row">
+                  <ul>
+                    <li>
+                      <img src="./images/briefcaseblue.svg" alt="briefcase" />
+                      <p>Commerce</p>
+                    </li>
+                    <li>
+                      <img src="./images/clock.svg" alt="Clock" />
+                      <p>Full time</p>
+                    </li>
+                    <li>
+                      <img src="./images/wallet.svg" alt="Wallet" />
+                      <p>$42000-$48000</p>
+                    </li>
+                    <li>
+                      <img src="./images/map-pin.svg" alt="Location" />
+                      <p>Florida,USA</p>
+                    </li>
+                  </ul>
+                  <button class="basic-button">Job Details</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-job">
+                <div class="first-row">
+                  <div class="cover">
+                    <p>26 min ago</p>
+                  </div>
+                  <a href="#"
+                    ><img src="./images/savemarket.svg" alt="Save Market"
+                  /></a>
+                </div>
+                <div class="second-row">
+                  <img src="./images/cmp5.svg" alt="Company Logo" />
+                  <div class="companyinfo">
+                    <h3>Corporate Tactics Facilitator</h3>
+                    <p>Cormier, Turner and Flatley Inc</p>
+                  </div>
+                </div>
+                <div class="third-row">
+                  <ul>
+                    <li>
+                      <img src="./images/briefcaseblue.svg" alt="briefcase" />
+                      <p>Commerce</p>
+                    </li>
+                    <li>
+                      <img src="./images/clock.svg" alt="Clock" />
+                      <p>Full time</p>
+                    </li>
+                    <li>
+                      <img src="./images/wallet.svg" alt="Wallet" />
+                      <p>$38000-$40000</p>
+                    </li>
+                    <li>
+                      <img src="./images/map-pin.svg" alt="Location" />
+                      <p>Boston,USA</p>
+                    </li>
+                  </ul>
+                  <button class="basic-button">Job Details</button>
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="card-job">
+                <div class="first-row">
+                  <div class="cover">
+                    <p>30 min ago</p>
+                  </div>
+                  <a href="#"
+                    ><img src="./images/savemarket.svg" alt="Save Market"
+                  /></a>
+                </div>
+                <div class="second-row">
+                  <img src="./images/cmp6.svg" alt="Company Logo" />
+                  <div class="companyinfo">
+                    <h3>Forward Accounts Consultant</h3>
+                    <p>Miller Group</p>
+                  </div>
+                </div>
+                <div class="third-row">
+                  <ul>
+                    <li>
+                      <img src="./images/briefcaseblue.svg" alt="briefcase" />
+                      <p>Financial services</p>
+                    </li>
+                    <li>
+                      <img src="./images/clock.svg" alt="Clock" />
+                      <p>Full time</p>
+                    </li>
+                    <li>
+                      <img src="./images/wallet.svg" alt="Wallet" />
+                      <p>$45000-$48000</p>
+                    </li>
+                    <li>
+                      <img src="./images/map-pin.svg" alt="Location" />
+                      <p>Boston,USA</p>
+                    </li>
+                  </ul>
+                  <button class="basic-button">Job Details</button>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <div class="page-buttons">
+            <div class="pages-numbers">
+              <button id="in-page">1</button>
+              <button>2</button>
+            </div>
+            <div class="next">
+              <button>
+                Next
+                <img src="./images/next-arrow.svg" alt="Next Arrow" />
+              </button>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="homepage-categories">
+        <header>
+          <h1 class="basic-title">Top Company</h1>
+          <p class="small-text">
+            At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+            Blandit a massa elementum
+          </p>
+        </header>
+        <ul>
+          <li>
+            <a href="#">
+              <article class="categorycard">
+                <div class="info">
+                  <img src="./images/instagram.png" alt="Instagram logo" />
+                  <h3 class="company-title">Instagram</h3>
+                  <p class="company-paragraph">
+                    Elit velit mauris aliquam est diam. Leo sagittis consectetur
+                    diam morbi erat
+                  </p>
+                  <div class="jobcover">
+                    <p>8 open jobs</p>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article class="categorycard">
+                <div class="info">
+                  <img src="./images/tesla.png" alt="Tesla logo" />
+                  <h3 class="company-title">Tesla</h3>
+                  <p class="company-paragraph">
+                    At pellentesque amet odio cras imperdiet nisl. Ac magna
+                    aliquet massa leo
+                  </p>
+                  <div class="jobcover">
+                    <p>16 open jobs</p>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article class="categorycard">
+                <div class="info">
+                  <img src="./images/mcdonalds.png" alt="McDonald's logo" />
+                  <h3 class="company-title">McDonald's</h3>
+                  <p class="company-paragraph">
+                    Odio aliquet tellus tellus maecenas. Faucibus in viverra
+                    venenatis phasellus
+                  </p>
+                  <div class="jobcover">
+                    <p>12 open jobs</p>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <article class="categorycard">
+                <div class="info">
+                  <img src="./images/apple.png" alt="Apple logo" />
+                  <h3 class="company-title">Apple</h3>
+                  <p class="company-paragraph">
+                    Et odio sem tellus ultrices posuere consequat. Tristique
+                    nascetur sapien
+                  </p>
+                  <div class="jobcover">
+                    <p>9 open jobs</p>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <div class="footer-up">
+          <article class="footer-job">
+            <ul>
+              <li>
+                <img
+                  src="./images/Group.svg"
+                  alt="logo"
+                  width="20"
+                  height="20"
+                />
+              </li>
+              <li>
+                <h3>Job</h3>
+              </li>
+            </ul>
+            <p>
+              Quis enim pellentesque viverra tellus eget malesuada facilisis.
+              Congue nibh vivamus aliquet nunc mauris dui nullam et.
+            </p>
+          </article>
+          <article class="footer-company">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">For Candidates</a></li>
+              <li><a href="#">For Employers</a></li>
+            </ul>
+          </article>
+          <article class="footer-categories">
+            <h3>Job Categories</h3>
+            <ul>
+              <li><a href="#">Telecomunications</a></li>
+              <li><a href="#">Hotel & Tourism</a></li>
+              <li><a href="#">Constructions</a></li>
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Financial Services</a></li>
+            </ul>
+          </article>
+          <article class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Eu nunc pretium vitae platea. Non netus elementum vulputate</p>
+            <form>
+              <input type="email" placeholder="Email Address" />
+              <button>Subscribe now</button>
+            </form>
+          </article>
+        </div>
+        <div class="footer-down">
+          <article class="footer-copyrigth">
+            <p>© Copyright Job Portal 2024. Designed by Figma.guru</p>
+          </article>
+          <article class="footer-legal">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </article>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
