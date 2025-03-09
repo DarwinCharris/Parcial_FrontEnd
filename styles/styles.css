@@ -961,7 +961,7 @@ body {
   display: flex;
   list-style-type: none;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 120px;
   margin-left: 0;
   padding-left: 0;
@@ -971,7 +971,8 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 15.9rem;
+  width: 300px;
+  height: 180px;
   border-radius: 12px; /* Bordes redondeados */
   padding: 25px 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); /* Sombra suave */
@@ -1158,6 +1159,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+  gap: 30px;
 }
 
 .about-five-section-images {
@@ -1215,6 +1217,64 @@ body {
 .about-five-section-information-unorderlist li img {
   width: 60px;
   height: 60px;
+}
+
+.about-sixth-section {
+  display: flex;
+  flex-flow: column;
+  margin-top: 120px;
+}
+
+.about-sixth-section-information-container {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-sixth-section-information-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.about-sixth-section-information-description {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.about-sixth-section-content {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.about-sixth-section-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-sixth-section-content-container-date {
+  font-size: 16px;
+}
+
+.about-sixth-section-content-container-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.about-sixth-section-content-container-extra {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.about-sixth-section-content-container-content {
+  font-size: 16px;
+  color: #309689;
 }
 
 /* ----------------------Mobile------------------------------------- */
