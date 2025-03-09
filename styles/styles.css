@@ -989,20 +989,34 @@ body {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.about-third-section-img {
+.about-third-section {
+  background-image: url(/images/about-image-two.png); /* URL de la imagen */
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
   width: 100%;
-  margin-bottom: 120px;
-  height: 760px;
+  height: 700px;
+  position: relative;
+}
+
+.about-third-section-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .about-third-section-information {
   display: flex;
-  margin-bottom: 40px;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
-  background-color: gray;
-  width: 40%;
+  max-width: 550px;
+  min-width: 100px;
 }
 
 .about-third-section-information-img {
@@ -1018,12 +1032,13 @@ body {
 }
 
 .about-third-section-information-unorderlist {
-  padding: 0;
+  padding: 40px 40px;
   margin: 0;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+   flex-flow: row wrap;
   list-style-type: none;
+  background-color: #000000;
+  border-radius: 20px;
   gap: 20px;
 }
 .about-third-section-information-unorderlist-main {
@@ -1038,39 +1053,44 @@ body {
 }
 
 .about-third-section-information-unorderlist li {
+  margin: 0;
+  padding: 0;
   gap: 10px;
   display: flex;
   flex-flow: row;
   width: 300px;
 }
 
-.about-third-section-information-unorderlist-num {
+.about-third-section-information-unorderlist-num-container {
   padding: 0;
   margin: 0;
   display: flex;
-  color: #ffffff;
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 700;
   justify-content: center;
   align-items: center;
-}
-
-.about-third-section-information-unorderlist-num-container {
   width: 50px;
   height: 50px;
   border-radius: 10px;
   background-color: var(--primary-color);
+  color: #ffffff;
 }
 
 .about-third-section-information-unorderlist-title {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 600;
-  color: #000000;
+  color: #ffffff;
 }
 
 .about-third-section-learn-more {
   color: var(--primary-color);
   font-size: 14px;
+}
+
+.about-fourth-section {
+  margin-top: 120px;
 }
 
 .about-fourth-section-questions,
@@ -1248,6 +1268,7 @@ body {
 .about-sixth-section-content {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .about-sixth-section-content-container {
@@ -1264,6 +1285,7 @@ body {
   font-weight: bold;
   margin: 0;
   padding: 0;
+  width: 670px;
 }
 
 .about-sixth-section-content-container-extra {
