@@ -2186,6 +2186,7 @@ body {
     display: flex;
     width: 10vw;
     gap: 20px;
+    background-color: #257a6e;
   }
 
   /* ----------About Page----------- */
