@@ -1484,7 +1484,7 @@ body {
 }
 
 .about-third-section {
-  background-image: url(/images/about-image-two.png); /* URL de la imagen */
+  background-image: url(./images/about-image-two.png); /* URL de la imagen */
   background-size: cover;
   background-position: center;
   border-radius: 20px;
@@ -2225,18 +2225,16 @@ body {
     font-size: 28px;
   }
 
-  .about-third-section-content{
+  .about-third-section-content {
     display: block;
     padding-top: 60px;
   }
 
-  .about-third-section-information-unorderlist{
+  .about-third-section-information-unorderlist {
     flex-direction: column;
     gap: 10px;
     align-items: center;
   }
-
-  
 
   .pages-main-container {
     margin: 40px 20px;
