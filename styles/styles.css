@@ -1533,7 +1533,6 @@ body {
   gap: 20px;
   justify-content: space-between;
   padding: 0;
-
   position: absolute;
   width: 100%;
 }
@@ -2225,6 +2224,19 @@ body {
   .about-third-section-information-p {
     font-size: 28px;
   }
+
+  .about-third-section-content{
+    display: block;
+    padding-top: 60px;
+  }
+
+  .about-third-section-information-unorderlist{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  
 
   .pages-main-container {
     margin: 40px 20px;
