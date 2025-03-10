@@ -30,6 +30,10 @@ A job portal designed to connect job seekers with employment opportunities.
 - **/contactUs** 🔗
 - **/jobDetails** 🔗
 
+## 🎨 Design
+
+https://www.figma.com/community/file/1376167660641081119
+
 ## 🚀 Features
 
 - 🏠 **Home Page**: Introduction to the portal and access to job listings.
