@@ -1302,7 +1302,7 @@ body {
 }
 
 .contact-main-section-info-unorderlist li {
-  width: 240px;
+  width: 250px;
   height: 135px;
   display: flex;
   flex-flow: column wrap;
@@ -1465,7 +1465,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 300px;
+  width: 240px;
   height: 180px;
   border-radius: 12px; /* Bordes redondeados */
   padding: 25px 15px;
@@ -1529,7 +1529,7 @@ body {
   padding: 40px 40px;
   margin: 0;
   display: flex;
-   flex-flow: row wrap;
+  flex-flow: row wrap;
   list-style-type: none;
   background-color: #000000;
   border-radius: 20px;
@@ -1672,7 +1672,7 @@ body {
   margin-top: 120px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   gap: 30px;
 }
 
@@ -1689,7 +1689,7 @@ body {
 }
 
 .about-five-section-information-container {
-  max-width: 600px;
+  max-width: 500px;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -1791,6 +1791,26 @@ body {
 .about-sixth-section-content-container-content {
   font-size: 16px;
   color: #309689;
+}
+
+.about-newcontent-information-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.about-newcontent-information-description {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.about-newcontent-information {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  align-items: center;
 }
 
 /* ----------------------Mobile------------------------------------- */
@@ -2108,17 +2128,19 @@ body {
   .job-overview li {
     margin-bottom: 10px;
   }
-  /* Contact Page */
+  /* ---------- Contact Page --------- */
   .contact-main {
     margin-left: 20px;
     margin-right: 20px;
   }
   .contact-main-section {
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
+    gap: 20px;
   }
   .contact-main-section-info {
     width: 100%;
   }
+
   .contact-main-section-info-title {
     font-size: 24px;
     text-align: center;
@@ -2132,8 +2154,10 @@ body {
     justify-content: center;
   }
 
+
   .contact-main-section-info-unorderlist li {
     align-items: center;
+    height: 141px;
   }
 
   .contact-main-section-info-unorderlist li img {
@@ -2142,7 +2166,7 @@ body {
   }
 
   .contact-main-section-form {
-    width: 100%;
+    width: 78%;/* Asegura que el formulario ocupe todo el ancho disponible */
   }
 
   .contact-main-section-form-initial {
@@ -2151,6 +2175,53 @@ body {
 
   .contact-main-section-form button {
     width: 100%;
+  }
+
+  .contact-main-section-business {
+    flex-wrap: nowrap; /* Evita que los elementos se envuelvan en pantallas pequeñas */
+    overflow-x: auto; /* Habilita el scroll horizontal */
+    display: flex;
+    width: 90vw;
+    gap: 20px;
+  }
+
+/* ----------About Page----------- */
+  .about-first-section-title{
+    text-align: center;
+  }
+
+  .about-first-section-paragraph{
+    text-align: center;
+  }
+
+  .about-second-section-unorderlist{
+    justify-content: center;
+  }
+
+  .about-fourth-section-title{
+    text-align: center;
+  }
+
+  .about-fourth-section-description{
+    text-align: center;
+  }
+
+  .about-five-section{
+    display: none;
+  }
+
+  .about-newcontent-information-title{
+    text-align: center;
+  }
+
+  .about-newcontent-information-description{
+    text-align: center;
+  }
+
+  .about-
+
+  .pages-main-container {
+    margin: 40px 20px;
   }
 
   /* footer */
