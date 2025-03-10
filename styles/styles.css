@@ -2184,7 +2184,7 @@ body {
     flex-wrap: nowrap; /* Evita que los elementos se envuelvan en pantallas pequeñas */
     overflow-x: auto; /* Habilita el scroll horizontal */
     display: flex;
-    width: 87vw;
+    width: 10vw;
     gap: 20px;
   }
 
