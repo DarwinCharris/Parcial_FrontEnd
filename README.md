@@ -4,8 +4,6 @@
 
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![React](https://img.shields.io/badge/React-%2361DAFB.svg?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -15,10 +13,22 @@
 
 A job portal designed to connect job seekers with employment opportunities.
 
-[Features](#-features) • [Requirements](#-requirements) • [Project Structure](#-project-structure) • [Contributing](#-contributing) • [License](#-license) • [Contact](#-contact)
+[Members](#-Members) • [Routes](#-Routes) • [Features](#-features) • [Requirements](#-requirements) • [Project Structure](#-project-structure) • [Contributing](#-contributing) • [License](#-license) • [Contact](#-contact)
 
 </div>
 
+## Members
+
+- Wilson Manuel Estrada Ortega (200098310)
+- Darwin Daniel Charris Hernandez (200163352)
+
+## Routes
+
+- **/index** 🔗
+- **/job** 🔗
+- **/abutUs** 🔗
+- **/contactUs** 🔗
+- **/jobDetails** 🔗
 
 ## 🚀 Features
 
@@ -26,6 +36,7 @@ A job portal designed to connect job seekers with employment opportunities.
 - 🔍 **Job Search**: Page displaying available job openings.
 - 📝 **Job Details**: Detailed information about each job offer.
 - 📌 **About Us**: Information about the platform and its purpose.
+- 📞 **Contact Us**: Contact a team member or check our location for more information.
 
 ## 🖥 Requirements
 
