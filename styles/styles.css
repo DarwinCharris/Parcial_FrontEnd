@@ -1534,6 +1534,7 @@ body {
   background-color: #000000;
   border-radius: 20px;
   gap: 20px;
+  justify-content: space-between;
 }
 .about-third-section-information-unorderlist-main {
   display: flex;
@@ -1563,8 +1564,8 @@ body {
   font-weight: 700;
   justify-content: center;
   align-items: center;
-  width: 50px;
-  height: 50px;
+  min-width: 40px;
+  height: 40px;
   border-radius: 10px;
   background-color: var(--primary-color);
   color: #ffffff;
@@ -1793,6 +1794,10 @@ body {
   color: #309689;
 }
 
+.about-newcontent-information {
+  margin: 52px 72px;
+}
+
 .about-newcontent-information-title {
   font-size: 50px;
   font-weight: bold;
@@ -1811,6 +1816,11 @@ body {
   flex-flow: column;
   gap: 30px;
   align-items: center;
+}
+
+.about-last-section {
+  margin-top: 0;
+  padding-top: 0px;
 }
 
 /* ----------------------Mobile------------------------------------- */
@@ -2158,7 +2168,6 @@ body {
     align-items: center;
   }
 
-
   .contact-main-section-form {
     width: 78%; /* Asegura que el formulario ocupe todo el ancho disponible */
   }
@@ -2212,10 +2221,17 @@ body {
     text-align: center;
   }
 
-  .about- .pages-main-container {
+  .about-third-section-information-p {
+    font-size: 28px;
+  }
+
+  .pages-main-container {
     margin: 40px 20px;
   }
 
+  .about-newcontent-information {
+    margin: 40px 20px;
+  }
   /* footer */
   .footer {
     padding: 50px 20px 30px 20px;
