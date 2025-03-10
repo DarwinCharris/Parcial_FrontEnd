@@ -1407,7 +1407,7 @@ body {
   border-radius: 20px;
 }
 
-/* About us Page */
+/* ----------------  About us Page ----------------  */
 .about-first-section-container {
   display: flex;
   gap: 2rem;
@@ -2154,7 +2154,6 @@ body {
     justify-content: center;
   }
 
-
   .contact-main-section-info-unorderlist li {
     align-items: center;
     height: 141px;
@@ -2166,7 +2165,7 @@ body {
   }
 
   .contact-main-section-form {
-    width: 78%;/* Asegura que el formulario ocupe todo el ancho disponible */
+    width: 78%; /* Asegura que el formulario ocupe todo el ancho disponible */
   }
 
   .contact-main-section-form-initial {
@@ -2185,42 +2184,40 @@ body {
     gap: 20px;
   }
 
-/* ----------About Page----------- */
-  .about-first-section-title{
+  /* ----------About Page----------- */
+  .about-first-section-title {
     text-align: center;
   }
 
-  .about-first-section-paragraph{
+  .about-first-section-paragraph {
     text-align: center;
   }
 
-  .about-second-section-unorderlist{
+  .about-second-section-unorderlist {
     justify-content: center;
   }
 
-  .about-fourth-section-title{
+  .about-fourth-section-title {
     text-align: center;
   }
 
-  .about-fourth-section-description{
+  .about-fourth-section-description {
     text-align: center;
   }
 
-  .about-five-section{
+  .about-five-section {
     display: none;
   }
 
-  .about-newcontent-information-title{
+  .about-newcontent-information-title {
     text-align: center;
   }
 
-  .about-newcontent-information-description{
+  .about-newcontent-information-description {
     text-align: center;
   }
 
-  .about-
-
-  .pages-main-container {
+  .about- .pages-main-container {
     margin: 40px 20px;
   }
 
